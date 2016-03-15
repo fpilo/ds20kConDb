@@ -1,0 +1,168 @@
+2016-02-28 18:50:10 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 18:59:31 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 19:02:29 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 22:03:46 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 22:45:01 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:01:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:02:35 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:07:33 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:08:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:13:13 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:14:14 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:14:14 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ds20kcondb.item_subtype_versions' doesn't exist
+Request URL: /ds20kConDb/Items
+Stack Trace:
+#0 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'item_subtype_ve...', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('item_subtype_ve...', Array)
+#2 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(429): Cake\Database\Schema\CachedCollection->describe('item_subtype_ve...')
+#3 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(505): Cake\ORM\Table->schema()
+#4 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(371): Cake\ORM\Table->primaryKey()
+#5 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(349): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\ItemsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(673): Cake\ORM\Query->contain(Array)
+#7 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(1780): Cake\ORM\Query->applyOptions(Array)
+#8 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(943): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#10 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ItemsTable), Array)
+#11 /var/www/html/ds20kConDb/src/Controller/ItemsController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ItemsTable))
+#12 [internal function]: App\Controller\ItemsController->index()
+#13 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#14 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ItemsController))
+#16 /var/www/html/ds20kConDb/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-02-28 23:18:43 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:18:43 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ds20kcondb.item_subtype_versions' doesn't exist
+Request URL: /ds20kConDb/Items
+Stack Trace:
+#0 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'item_subtype_ve...', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('item_subtype_ve...', Array)
+#2 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(429): Cake\Database\Schema\CachedCollection->describe('item_subtype_ve...')
+#3 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(505): Cake\ORM\Table->schema()
+#4 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(371): Cake\ORM\Table->primaryKey()
+#5 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(349): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\ItemsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(673): Cake\ORM\Query->contain(Array)
+#7 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(1780): Cake\ORM\Query->applyOptions(Array)
+#8 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(943): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#10 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ItemsTable), Array)
+#11 /var/www/html/ds20kConDb/src/Controller/ItemsController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ItemsTable))
+#12 [internal function]: App\Controller\ItemsController->index()
+#13 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#14 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ItemsController))
+#16 /var/www/html/ds20kConDb/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-02-28 23:18:57 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:19:21 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:19:21 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ds20kcondb.item_subtype_versions' doesn't exist
+Request URL: /ds20kConDb/Items/index
+Stack Trace:
+#0 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'item_subtype_ve...', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('item_subtype_ve...', Array)
+#2 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(429): Cake\Database\Schema\CachedCollection->describe('item_subtype_ve...')
+#3 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(505): Cake\ORM\Table->schema()
+#4 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(371): Cake\ORM\Table->primaryKey()
+#5 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(349): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\ItemsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(673): Cake\ORM\Query->contain(Array)
+#7 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(1780): Cake\ORM\Query->applyOptions(Array)
+#8 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(943): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#10 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ItemsTable), Array)
+#11 /var/www/html/ds20kConDb/src/Controller/ItemsController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ItemsTable))
+#12 [internal function]: App\Controller\ItemsController->index()
+#13 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#14 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ItemsController))
+#16 /var/www/html/ds20kConDb/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-02-28 23:28:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:28:29 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ds20kcondb.locations' doesn't exist
+Request URL: /ds20kConDb/Items/index
+Stack Trace:
+#0 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'locations', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(64): Cake\Database\Schema\Collection->describe('locations', Array)
+#2 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(429): Cake\Database\Schema\CachedCollection->describe('locations')
+#3 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(505): Cake\ORM\Table->schema()
+#4 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(371): Cake\ORM\Table->primaryKey()
+#5 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(349): Cake\ORM\Query->_addAssociationsToTypeMap(Object(App\Model\Table\ItemsTable), Object(Cake\Database\TypeMap), Array)
+#6 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(673): Cake\ORM\Query->contain(Array)
+#7 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(1780): Cake\ORM\Query->applyOptions(Array)
+#8 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Table.php(943): Cake\ORM\Table->callFinder('all', Object(Cake\ORM\Query), Array)
+#9 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(166): Cake\ORM\Table->find('all', Array)
+#10 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ItemsTable), Array)
+#11 /var/www/html/ds20kConDb/src/Controller/ItemsController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ItemsTable))
+#12 [internal function]: App\Controller\ItemsController->index()
+#13 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#14 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ItemsController))
+#16 /var/www/html/ds20kConDb/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2016-02-28 23:30:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:30:52 Error: [InvalidArgumentException] Items is not associated with Locations
+Request URL: /ds20kConDb/Items/index
+Stack Trace:
+#0 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(252): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\ItemsTable), 'Locations', Array, Array)
+#1 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(377): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\ItemsTable))
+#2 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(348): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\ItemsTable))
+#3 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(947): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ItemsTable), true)
+#4 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(901): Cake\ORM\Query->_transformQuery()
+#5 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(121): Cake\ORM\Query->sql()
+#6 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Connection.php(216): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Connection.php(268): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(921): Cake\Database\Query->execute()
+#10 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(871): Cake\ORM\Query->_all()
+#12 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(171): Cake\ORM\Query->all()
+#13 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ItemsTable), Array)
+#14 /var/www/html/ds20kConDb/src/Controller/ItemsController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ItemsTable))
+#15 [internal function]: App\Controller\ItemsController->index()
+#16 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#17 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ItemsController))
+#19 /var/www/html/ds20kConDb/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-02-28 23:31:22 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:31:27 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:31:27 Error: [InvalidArgumentException] Items is not associated with Locations
+Request URL: /ds20kConDb/Items
+Stack Trace:
+#0 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(252): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\ItemsTable), 'Locations', Array, Array)
+#1 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(377): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\ItemsTable))
+#2 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(348): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\ItemsTable))
+#3 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(947): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ItemsTable), true)
+#4 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(901): Cake\ORM\Query->_transformQuery()
+#5 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(121): Cake\ORM\Query->sql()
+#6 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Connection.php(216): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Connection.php(268): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Database/Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(921): Cake\Database\Query->execute()
+#10 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/ORM/Query.php(871): Cake\ORM\Query->_all()
+#12 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(171): Cake\ORM\Query->all()
+#13 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ItemsTable), Array)
+#14 /var/www/html/ds20kConDb/src/Controller/ItemsController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ItemsTable))
+#15 [internal function]: App\Controller\ItemsController->index()
+#16 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Controller/Controller.php(429): call_user_func_array(Array, Array)
+#17 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 /var/www/html/ds20kConDb/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ItemsController))
+#19 /var/www/html/ds20kConDb/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2016-02-28 23:33:48 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:34:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:34:18 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:34:28 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:34:52 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
+2016-02-28 23:34:53 Warning: DebugKit not enabled. You need to either install pdo_sqlite, or define the "debug_kit" connection name.
