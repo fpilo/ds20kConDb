@@ -20,6 +20,10 @@ use Cake\Network\Exception\NotFoundException;
 
 $this->layout = false;
 
+if (!Configure::read('debug')):
+    throw new NotFoundException('Please replace Pages/home.ctp with your own version.');
+endif;
+
 $cakeDescription = 'CakePHP: the rapid development PHP framework';
 ?>
 <!DOCTYPE html>
@@ -27,25 +31,20 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 <head>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Side 20k construction database</title>
+    <title>
+        <?= $cakeDescription ?>
+    </title>
     <?= $this->Html->meta('icon') ?>
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
-	<link href="http://blackhole.lngs.infn.it/darkside/wp-content/themes/twentyeleven_mod/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body class="home">
     <header>
-        <div>
-            <h1>Darkside 20k construction database</h1>
+        <div class="header-image">
+            <?= $this->Html->image('http://cakephp.org/img/cake-logo.png') ?>
+            <h1>Get the Ovens Ready</h1>
         </div>
     </header>
-	<nav class="large-2 medium-4 columns" id="actions-sidebar">
-		<ul class="side-nav">
-			<li class="heading"><?= __('Actions') ?></li>
-			<li><?= $this->Html->link(__('Items'), ['controller' => 'items','action' => 'index']) ?></li>
-			<li><?= $this->Html->link(__('Measurements'), ['action' => 'index']) ?></li>
-		</ul>
-	</nav>
     <div id="content">
         <div class="row">
             <div class="row">
